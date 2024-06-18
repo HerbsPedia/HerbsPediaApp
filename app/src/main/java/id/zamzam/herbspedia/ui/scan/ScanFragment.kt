@@ -93,6 +93,10 @@ class ScanFragment : Fragment() {
                 fetchPlantDescription(label)
             }
         }
+
+        binding.backButton.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
     }
 
     private fun checkCameraPermissionAndOpenCamera() {

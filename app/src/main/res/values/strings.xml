@@ -31,6 +31,18 @@
     <string name="password_marked">***</string>
     <string name="logout">Logout</string>
 
+    <string name="preview_foto">Preview Foto</string>
+    <string name="back_button">Kembali</string>
+    <string name="help_button">Bantuan</string>
+    <string name="preview_image">Gambar Preview</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+
+    <string name="title_scan">Scan Tanaman Disini</string>
+    <string name="predict">Predict</string>
+    <string name="prediction">Prediction</string>
+    <string name="show_result">Show Result</string>
 
 
 </resources>
