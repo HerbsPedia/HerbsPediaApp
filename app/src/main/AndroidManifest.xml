@@ -18,19 +18,31 @@
         android:theme="@style/Theme.HerbsPedia"
         tools:targetApi="31">
         <activity
-            android:name=".ui.main.DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.splash.SplashActivity"
+            android:name=".ui.welcome.WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity -->
-        <!-- android:name=".SplashActivity" -->
-        <!-- android:exported="false"/> -->
+        </activity>
+<!--        <activity-->
+<!--            android:name=".ui.welcome.WelcomeActivity"-->
+<!--            android:exported="false" />-->
+
+<!--        <activity-->
+<!--            android:name=".ui.splash.SplashActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity> -->
+
+         <activity
+         android:name=".ui.splash.SplashActivity"
+         android:exported="false"/>
         <activity
             android:name=".ui.register.RegisterActivity"
             android:exported="false" />
