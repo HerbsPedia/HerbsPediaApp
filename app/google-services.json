@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014301882337",
+    "project_id": "capstone-herbspedia-425213",
+    "storage_bucket": "capstone-herbspedia-425213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014301882337:android:6b42095a43ced5c17dc4a0",
+        "android_client_info": {
+          "package_name": "id.zamzam.herbspedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXmDNk8kr9wz5iBVtzIvW2Sg5lk1RDyZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

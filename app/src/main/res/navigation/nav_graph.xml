@@ -1,0 +1,71 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="id.zamzam.herbspedia.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_listPlantFragment"
+            app:destination="@id/listPlantFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listPlantFragment"
+        android:name="id.zamzam.herbspedia.ui.home.ListPlantFragment"
+        android:label="ListPlantFragment"
+        tools:layout="@layout/fragment_list_plant" >
+        <action
+            android:id="@+id/action_listPlantFragment_to_detailPlantFragment"
+            app:destination="@id/detailPlantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailPlantFragment"
+        android:name="id.zamzam.herbspedia.ui.home.DetailPlantFragment"
+        android:label="DetailPlantFragment"
+        tools:layout="@layout/fragment_detail_plant" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="id.zamzam.herbspedia.ui.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailPlantFragment"
+            app:destination="@id/detailPlantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="id.zamzam.herbspedia.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="id.zamzam.herbspedia.ui.chatbot.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="id.zamzam.herbspedia.ui.scan.ScanFragment"
+        android:label="ScanFragment"
+        tools:layout="@layout/fragment_scan">
+        <action
+            android:id="@+id/action_scanFragment_to_detailScanFragment"
+            app:destination="@id/detailScanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScanFragment"
+        android:name="id.zamzam.herbspedia.ui.scan.DetailScanFragment"
+        android:label="DetailScanFragment"/>
+</navigation>

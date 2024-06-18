@@ -1,0 +1,182 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/green"
+
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginStart="32dp"
+					android:layout_marginTop="32dp"
+					android:layout_marginEnd="32dp">
+
+					<TextView
+						android:id="@+id/textView10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Welcome"
+						android:textColor="@color/white"
+						android:textSize="20sp"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						android:id="@+id/tvHello"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Zam Zam"
+						android:textColor="@color/white"
+						android:textStyle="bold"
+						android:textSize="24sp"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+					<ImageView
+						android:id="@+id/imageView3"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:src="@drawable/ic_notif"
+						app:layout_constraintBottom_toBottomOf="@+id/tvHello"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<TextView
+					android:id="@+id/textView9"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Find Your Plants\nHere!"
+					android:layout_marginTop="32dp"
+					android:textStyle="bold"
+					android:textSize="30dp"
+					android:layout_marginStart="32dp"
+					android:textColor="@color/white"/>
+
+				<EditText
+					android:id="@+id/editTextText2"
+					android:layout_width="match_parent"
+					android:layout_height="55dp"
+					android:ems="10"
+					android:inputType="text"
+					android:background="@drawable/edittext_bg"
+					android:drawableStart="@drawable/ic_search"
+					android:padding="16dp"
+					android:hint="Search Plant"
+					android:textColor="@color/green"
+					android:textColorHint="@color/green"
+					android:drawablePadding="16dp"
+					android:layout_marginTop="16dp"
+					android:layout_marginStart="32sp"
+					android:layout_marginEnd="32dp"
+					android:layout_marginBottom="16dp"/>
+
+			</LinearLayout>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/imageView9"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:scaleType="fitXY"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:srcCompat="@drawable/arc_2" />
+
+				<!--                <ImageView-->
+				<!--                    android:layout_width="match_parent"-->
+				<!--                    android:layout_height="170dp"-->
+				<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+				<!--                    app:layout_constraintStart_toStartOf="parent"-->
+				<!--                    app:layout_constraintTop_toTopOf="parent"-->
+				<!--                    android:layout_margin="10dp"-->
+				<!--                    app:srcCompat="@drawable/cover"/>-->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					tools:ignore="MissingConstraints">
+
+					<ViewFlipper
+						android:layout_width="wrap_content"
+						android:layout_height="200dp"
+						android:autoStart="true"
+						android:flipInterval="5000"
+						android:layout_marginLeft="32dp"
+						android:layout_marginRight="32dp"
+						android:inAnimation="@anim/slide_in_left">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/cover"/>
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/tanaman"/>
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/tanaman2"/>
+					</ViewFlipper>
+				</LinearLayout>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10dp"
+				android:layout_marginStart="32dp"
+				android:layout_marginEnd="32dp"
+				android:layout_marginBottom="10dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textView12"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Kategori Tanaman"
+					android:textColor="@color/black"
+					android:textSize="19sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/textView13"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="See All"
+					android:textColor="@color/red" />
+
+			</LinearLayout>
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/view1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingStart="16dp"
+				android:paddingEnd="16dp" />
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
