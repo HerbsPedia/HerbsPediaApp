@@ -112,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="90dp"
-                android:text="TextView"/>
+                android:text="TextView"
+                android:textSize="16sp"/>
         </LinearLayout>
     </ScrollView>
     <!-- Guideline for Bottom Navigation View -->

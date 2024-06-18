@@ -91,7 +91,7 @@
                     android:textSize="18sp"
                     android:inputType="text"
                     android:padding="16dp"
-                    android:textColorHint="@color/green" />
+                    android:textColorHint="@color/secondaryColor" />
 
             </LinearLayout>
 
