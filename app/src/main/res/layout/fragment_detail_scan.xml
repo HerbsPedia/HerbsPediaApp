@@ -116,4 +116,11 @@
                 android:textSize="16sp"/>
         </LinearLayout>
     </ScrollView>
+    <!-- Guideline for Bottom Navigation View -->
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline_bottom"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.90" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
