@@ -38,18 +38,20 @@
         android:padding="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewLogin">
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogin"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/tv_email_login"
+            style="@style/TextView.PoppinsNormal13sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_email"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:textSize="18sp"
-            style="@style/TextView.PoppinsNormal13sp8D92A3" />
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailEditTextLayout"
@@ -57,30 +59,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:startIconDrawable="@drawable/ic_email"
+            android:textColorHint="@color/focused_color"
             app:boxStrokeColor="@color/focused_color"
-            android:textColorHint="@color/focused_color">
+            app:startIconDrawable="@drawable/ic_email">
 
             <id.zamzam.herbspedia.ui.CustomEmailEditText
                 android:id="@+id/edt_email_login"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:textSize="18sp"
                 android:inputType="textEmailAddress"
-                style="@style/EditText.PoppinsNormal14sp8D92A3" />
+                android:textSize="18sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/tv_password_login"
+            style="@style/TextView.PoppinsNormal13sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/login_password"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:textSize="18sp"
-            style="@style/TextView.PoppinsNormal13sp8D92A3" />
+            android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordEditTextLayout"
@@ -88,56 +90,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:endIconMode="password_toggle"
-            app:startIconDrawable="@drawable/ic_lock"
+            android:textColorHint="@color/focused_color"
             app:boxStrokeColor="@color/focused_color"
-            android:textColorHint="@color/focused_color">
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_lock">
 
             <id.zamzam.herbspedia.ui.CustomPasswordEditText
                 android:id="@+id/edtPasswordLogin"
+                style="@style/EditText.PoppinsNormal14sp8D92A3"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:textSize="18sp"
                 android:inputType="textPassword"
-                style="@style/EditText.PoppinsNormal14sp8D92A3" />
+                android:textSize="18sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/remember_password"
-            android:textAlignment="center"
-            style="@style/TextView.PoppinsNormal13sp8D92A3" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
+            style="@style/TextView.PoppinsNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/btn_login"
+            android:layout_marginTop="32dp"
             android:background="@drawable/btn_bg"
-            style="@style/TextView.PoppinsNormal14sp8D92A3" />
+            android:text="@string/btn_login" />
 
         <TextView
+            style="@style/TextView.PoppinsNormal13sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/not_have_account"
-            android:textAlignment="center"
-            style="@style/TextView.PoppinsNormal13sp8D92A3" />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tv_to_register"
+            style="@style/TextView.PoppinsNormal14sp8D92A3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/to_register_title"
             android:textAlignment="center"
             android:textColor="@color/teal_700"
-            android:textStyle="bold"
-            style="@style/TextView.PoppinsNormal14sp8D92A3" />
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

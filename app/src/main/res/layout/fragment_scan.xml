@@ -51,11 +51,11 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_margin="10dp"
-            android:background="@drawable/ic_scan_image"
+            android:background="@drawable/ic_scan_image2"
             android:contentDescription="ImageScan"
             app:layout_constraintDimensionRatio="16:9"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout

@@ -22,10 +22,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Profile"
-                android:textSize="32sp"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:layout_marginBottom="44dp"
+                android:layout_marginBottom="30dp"
                 android:textColor="@color/backgroundColor"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,7 +64,7 @@
                         style="@style/TextView.PoppinsNormal14sp8D92A3"
                         android:textSize="15sp"
                         android:textColor="#000000"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/tv_username_profile2"
@@ -114,7 +115,7 @@
                         style="@style/TextView.PoppinsNormal14sp8D92A3"
                         android:textSize="15sp"
                         android:textColor="#000000"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/tv_email_profile2"
@@ -164,7 +165,7 @@
                         style="@style/TextView.PoppinsNormal14sp8D92A3"
                         android:textSize="15sp"
                         android:textColor="#000000"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="5dp"/>
 
                     <TextView
                         android:id="@+id/tv_password_profile2"

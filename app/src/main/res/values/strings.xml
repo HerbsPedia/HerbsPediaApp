@@ -12,7 +12,7 @@
     <string name="category_title_name2">Leaf Plants</string>
     <string name="category_title_name3">Stem Plants</string>
 
-    <string name="register_title">Create\n Account</string>
+    <string name="register_title">Create\nAccount</string>
     <string name="register_name">Name</string>
     <string name="register_email">Email</string>
     <string name="register_password">Password</string>
@@ -21,7 +21,7 @@
     <string name="to_login_title">Login</string>
     <string name="hint_name">Enter Name</string>
 
-    <string name="login_title">Hi, \n Please Login</string>
+    <string name="login_title">Hi,\n Please Login</string>
     <string name="login_email">Email</string>
     <string name="login_password">Password</string>
     <string name="btn_login">Login</string>
@@ -60,8 +60,8 @@
     <string name="desc_menu_2">Dapatkan informasi lengkap tentang deskripsi tanaman, manfaat kesehatan, penggunaan tradisional, dan cara pengolahan berbagai tanaman herbal. </string>
     <string name="title_menu_3">Panduan Praktis Penggunaan Herbal</string>
     <string name="desc_menu_3">Dapatkan tips dan resep praktis untuk memanfaatkan tanaman herbal dalam kehidupan sehari-hari..</string>
-    <string name="title_menu_4">Konsultasi dengan HerbsPedia Bot</string>
-    <string name="desc_menu_4">Gunakan fitur HerbsPedia Bot untuk mendapatkan jawaban cepat dan akurat tentang berbagai tanaman herbal dan kegunaannya.</string>
+    <string name="title_menu_4">Konsultasi dengan Chat Bot</string>
+    <string name="desc_menu_4">Gunakan fitur HerbsPedia Chat Bot untuk mendapatkan jawaban cepat dan akurat tentang berbagai tanaman herbal dan kegunaannya.</string>
     <string name="learn_now">Login Sekarang</string>
 
 

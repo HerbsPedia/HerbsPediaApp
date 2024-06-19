@@ -35,7 +35,7 @@ import id.zamzam.herbspedia.ui.chatbot.theme.TextColor
 
 @Composable
 fun ChatPage(modifier: Modifier = Modifier, viewModel: ChatViewModel) {
-    Column(modifier = modifier.padding(bottom = 130.dp)) {
+    Column(modifier = modifier.padding(bottom = 120.dp)) {
         AppHeader()
         MessageList(modifier = Modifier.weight(1f), messageList = viewModel.messageList)
         MessageInput(onMessageSend = {
@@ -124,7 +124,7 @@ fun AppHeader() {
         .background(BgHeader)) {
         Text(
             modifier = Modifier.padding(16.dp),
-            text = "HerbsPedia Bot",
+            text = "Chat Bot",
             color = Color.White,
             fontSize = 22.sp
         )
