@@ -2,7 +2,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance  {
-    private const val BASE_URL = "https://api-endpoint-dgonny5rzq-et.a.run.app/api/"  // Gunakan 10.0.2.2 untuk emulator, ganti dengan IP yang sesuai untuk perangkat fisik
+    private const val BASE_URL = "https://api-endpoint-dgonny5rzq-et.a.run.app/api/"
 
     val instance: Retrofit by lazy {
         Retrofit.Builder()

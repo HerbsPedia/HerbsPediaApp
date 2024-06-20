@@ -55,15 +55,6 @@ class SearchFragment : Fragment() {
         binding.rvPlant.layoutManager = LinearLayoutManager(requireContext())
         binding.rvPlant.adapter = plantAdapter
 
-//        binding.btnSearch.setOnClickListener {
-//            val query = binding.etQuery.text.toString().trim()
-//            if (query.isNotEmpty()) {
-//                searchPlants(query)
-//            } else {
-//                Toast.makeText(requireContext(), "Please enter a search query", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-
         binding.etQuery.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 

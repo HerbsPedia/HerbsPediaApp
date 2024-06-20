@@ -16,9 +16,9 @@ class PlantAdapter(private var plants: List<Plant>, private val itemClickListene
             binding.tvTitle.text = plant.nama
 
             Glide.with(binding.root)
-                .load(plant.gambar) // Menggunakan Glide untuk memuat gambar dari URL
-                .placeholder(R.drawable.tanaman) // Gambar default jika URL kosong
-                .error(R.drawable.tanaman2) // Gambar default jika terjadi error
+                .load(plant.gambar)
+                .placeholder(R.drawable.tanaman) //
+                .error(R.drawable.tanaman2) //
                 .into(binding.ivPlant)
 
             binding.root.setOnClickListener { itemClickListener(plant) }

@@ -65,7 +65,6 @@ class DetailPlantFragment : Fragment() {
                     dataSource: DataSource?,
                     isFirstResource: Boolean
                 ): Boolean {
-                    // Hide progress bar when image loaded successfully
                     binding.progressBar.visibility = View.GONE
                     return false
                 }

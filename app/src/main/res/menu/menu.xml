@@ -13,8 +13,7 @@
 
     <item
         android:id="@+id/nav_blank"
-        android:enabled="false"
-        android:title=""/>
+        android:title="TODO" />
 
     <item
         android:id="@+id/nav_chat"

@@ -132,7 +132,7 @@ class ScanFragment : Fragment() {
                         val inputStream: InputStream? = requireContext().contentResolver.openInputStream(uri)
                         val bitmap = BitmapFactory.decodeStream(inputStream)
 //                        selectedImageBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
-                        val scaledBitmap  = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
+                        val scaledBitmap  = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
                         scanViewModel.setSelectedImageBitmap(scaledBitmap)
 //                        binding.imageView.setImageBitmap(bitmap)
                     }
@@ -140,7 +140,7 @@ class ScanFragment : Fragment() {
                 CAPTURE_IMAGE_REQUEST_CODE -> {
                     val bitmap = data?.extras?.get("data") as Bitmap
 //                    selectedImageBitmap = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
-                    val scaledBitmap  = Bitmap.createScaledBitmap(bitmap, 150, 150, true)
+                    val scaledBitmap  = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
 //                    binding.imageView.setImageBitmap(bitmap)
                     scanViewModel.setSelectedImageBitmap(scaledBitmap)
                 }
@@ -153,7 +153,8 @@ class ScanFragment : Fragment() {
 
         val model = ModelHerbPedia.newInstance(requireContext())
 
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 150, 150, 3), DataType.FLOAT32)
+//        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 150, 150, 3), DataType.FLOAT32)
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
         inputFeature0.loadBuffer(byteBuffer)
 
         val outputs = model.process(inputFeature0)
@@ -177,14 +178,18 @@ class ScanFragment : Fragment() {
     }
 
     private fun convertBitmapToByteBuffer(bitmap: Bitmap): ByteBuffer {
-        val byteBuffer = ByteBuffer.allocateDirect(4 * 150 * 150 * 3)
+//        val byteBuffer = ByteBuffer.allocateDirect(4 * 150 * 150 * 3)
+        val byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3)
         byteBuffer.order(ByteOrder.nativeOrder())
-        val intValues = IntArray(150 * 150)
+//        val intValues = IntArray(150 * 150)
+        val intValues = IntArray(224 * 224)
 
         bitmap.getPixels(intValues, 0, bitmap.width, 0, 0, bitmap.width, bitmap.height)
         var pixel = 0
-        for (i in 0 until 150) {
-            for (j in 0 until 150) {
+//        for (i in 0 until 150) {
+        for (i in 0 until 224) {
+//            for (j in 0 until 150) {
+            for (j in 0 until 224) {
                 val value = intValues[pixel++]
                 byteBuffer.putFloat(((value shr 16 and 0xFF) / 255.0f))
                 byteBuffer.putFloat(((value shr 8 and 0xFF) / 255.0f))

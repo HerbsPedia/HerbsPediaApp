@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/white"
-        app:fabCradleMargin="10dp"
+        app:fabCradleMargin="20dp"
         app:fabCradleRoundedCornerRadius="50dp"
-        app:fabCradleVerticalOffset="10dp">
+        app:fabCradleVerticalOffset="0dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
@@ -31,6 +31,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/transparent"
             android:clickable="false"
+            android:layout_marginRight="16dp"
             app:itemIconTint="@color/secondaryColor"
             app:itemTextColor="@color/secondaryColor"
             app:itemRippleColor="@android:color/transparent"
@@ -44,8 +45,9 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/backgroundColor"
         android:src="@drawable/ic_scan"
-        app:tint="@color/white"
-        app:layout_anchor="@id/nav"
-        app:layout_anchorGravity="center" />
+        app:layout_anchor="@+id/nav"
+
+        app:layout_anchorGravity="bottom"
+        app:tint="@color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

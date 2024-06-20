@@ -16,14 +16,11 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Periksa apakah pengguna sudah masuk
         if (UserPreferences.getInstance(this).isLoggedIn()) {
-            // Jika sudah masuk, arahkan ke MainActivity
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         } else {
-            // Jika belum masuk, tampilkan tombol "Get Started"
             binding.button.setOnClickListener {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
